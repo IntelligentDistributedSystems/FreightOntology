@@ -32,49 +32,64 @@
 
     <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasDescriptionOfFreight -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasDescriptionOfFreight"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasDescriptionOfFreight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Freight"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasMoneyValue -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasMoneyValue"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasMoneyValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#MoneyValue"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasNameOfFreight -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasNameOfFreight"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasNameOfFreight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Freight"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasNumberOfBoxOfFreight -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasNumberOfBoxOfFreight"/>
-    
-
-
-    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasSupplierName -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasSupplierName"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasNumberOfBoxOfFreight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#BoxOfFreight"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasTemperature -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasTemperature"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasTemperature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#ControlledTemperature"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasVolume -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasVolume"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasVolume">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#TotalVolume"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
     
 
 
     <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasWeight -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasWeight"/>
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasWeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#TotalWeight"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
     
 
 
