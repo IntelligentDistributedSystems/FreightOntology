@@ -4,7 +4,7 @@ Freight Ontology
 We  provide  an  ontology  for  the development  of  a  freight  transportation  broker, with the aim of connecting cargo owners with the freight transportation providers through appropriate contracts. 
 
 ### Description
-The proposed logistics ontology consists of four parts. We preferred  to  present  them  separately,  for  a  better  analysis  of the  problem  domain. The four proposed ontologies are: Transport Request Ontology, Transport Resource Ontology, Freight Ontology and Messages Ontology. Transport Request Ontology describes the elements of a transport request, Transport Resource Ontology describes transport resource capabilities, Freight Ontology describes the freight that must be transported and Messages Ontology is used for describing the messages exchanged by agents in the system.
+The proposed logistics ontology consists of 3 parts. We preferred  to  present  them  separately,  for  a  better  analysis  of the  problem  domain. The four proposed ontologies are: Transport Request Ontology, Transport Resource Ontology and Freight Ontology. Transport Request Ontology describes the elements of a transport request, Transport Resource Ontology describes transport resource capabilities, Freight Ontology describes the freight that must be transported.
 
 
 ### Authors and Contributors
