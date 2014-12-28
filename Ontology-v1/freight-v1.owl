@@ -1,0 +1,321 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#"
+     xml:base="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasSupplierName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#hasSupplierName"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#BoxOfFreight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#BoxOfFreight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LogisticsObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Container -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Container">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#BoxOfFreight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#ControlledTemperature -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#ControlledTemperature">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#SpecialConditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#DangerousGoods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#DangerousGoods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#SpecialConditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#DescriptionContent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#DescriptionContent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Freight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#ExpirationDate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#ExpirationDate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Freight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Freight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Freight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LogisticsObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#GasState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#GasState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#StateOfFreight"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LiquidState"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#SolidState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LiquidState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LiquidState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#StateOfFreight"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#SolidState"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LogisticsLocations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LogisticsLocations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LogisticsObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LogisticsObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LogisticsObject"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#NameOfFreight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#NameOfFreight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Freight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#NonPerishableGoods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#NonPerishableGoods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#TypeOfFreight"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#PerishableGoods"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Oversized -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Oversized">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#SpecialConditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Package -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Package">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#BoxOfFreight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Pallet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Pallet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#BoxOfFreight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#PerishableGoods -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#PerishableGoods">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#TypeOfFreight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#PointOfDestination -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#PointOfDestination">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LogisticsLocations"/>
+        <rdfs:comment>Destination address of freight.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#PointOfDispatch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#PointOfDispatch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LogisticsLocations"/>
+        <rdfs:comment>Origin address of freight.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#QuantitativeValue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#QuantitativeValue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LogisticsObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#QuantityOfFreight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#QuantityOfFreight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Freight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Refigerated -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Refigerated">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#SpecialConditions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#SolidState -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#SolidState">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#StateOfFreight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#SpecialConditions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#SpecialConditions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#LogisticsObject"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#StateOfFreight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#StateOfFreight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Freight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#TimePeriod -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#TimePeriod">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Freight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#TypeOfFreight -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#TypeOfFreight">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Freight"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#UnitOfMensurement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#UnitOfMensurement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#QuantitativeValue"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#indFlatDoors -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#indFlatDoors">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#NonPerishableGoods"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#PointOfDestination"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#PointOfDispatch"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#SolidState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Container"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Package"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/lucian/ontologies/2014/1/untitled-ontology-19#Pallet"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
+
