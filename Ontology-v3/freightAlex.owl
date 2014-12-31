@@ -1,0 +1,408 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <lo/freight>
+
+
+Datatype: xsd:positiveInteger
+
+    
+Datatype: xsd:string
+
+    
+Datatype: xsd:double
+
+    
+ObjectProperty: <lo/freight#hasWeightOfFreightUnitOfMeasurement>
+
+    SubPropertyOf: 
+        <lo/freight#hasQuantifiableTraitsOfFreight>
+    
+    Domain: 
+        <lo/freight#Freight>
+    
+    Range: 
+        <lo/freight#WeightOfFreight>
+    
+    
+ObjectProperty: <lo/freight#hasStateOfAggregationfOfFreight>
+
+    Domain: 
+        <lo/freight#AggregationStateOfFreight>
+    
+    Range: 
+        <lo/freight#AggregationStateOfFreight>
+    
+    
+ObjectProperty: <lo/freight#hasTemperatureUnitOfMeasurement>
+
+    SubPropertyOf: 
+        <lo/freight#hasSpecialConditions>
+    
+    Domain: 
+        <lo/freight#ControlledTemperature>
+    
+    Range: 
+        <lo/freight#TemperatureUnitOfMeasure>
+    
+    
+ObjectProperty: <lo/freight#hasMarketPriceUnitOfMeasurement>
+
+    SubPropertyOf: 
+        <lo/freight#hasQuantifiableTraitsOfFreight>
+    
+    Domain: 
+        <lo/freight#Freight>
+    
+    Range: 
+        <lo/freight#MarketPriceOfFreight>
+    
+    
+ObjectProperty: <lo/freight#hasVolumeWeightOfFreightUnitOfMeasument>
+
+    SubPropertyOf: 
+        <lo/freight#hasQuantifiableTraitsOfFreight>
+    
+    Domain: 
+        <lo/freight#Freight>
+    
+    Range: 
+        <lo/freight#VolumeOfFreight>
+    
+    
+ObjectProperty: <lo/freight#hasQuantifiableTraitsOfFreight>
+
+    Domain: 
+        <lo/freight#Freight>
+    
+    Range: 
+        <lo/freight#QuantifiableTraitsOfFreight>
+    
+    
+ObjectProperty: <lo/freight#hasSpecialConditionsOfFreight>
+
+    Domain: 
+        <lo/freight#Freight>
+    
+    Range: 
+        <lo/freight#SpecialConditionsOfFreight>
+    
+    
+ObjectProperty: <lo/freight#hasPerishabilityOfFreight>
+
+    Domain: 
+        <lo/freight#Freight>
+    
+    Range: 
+        <lo/freight#PerishabilityOfFreight>
+    
+    
+ObjectProperty: <lo/freight#hasSpecialConditions>
+
+    SubPropertyOf: 
+        <lo/freight#hasSpecialConditionsOfFreight>
+    
+    Domain: 
+        <lo/freight#SpecialConditions>
+    
+    Range: 
+        <lo/freight#ControlledTemperature>,
+        <lo/freight#OversizedFreight>,
+        <lo/freight#DangerousFreight>
+    
+    
+DataProperty: <lo/freight#hasWeightOfFreightValue>
+
+    Domain: 
+        <lo/freight#WeightOfFreight>
+    
+    Range: 
+        xsd:double
+    
+    
+DataProperty: <lo/freight#hasNumberOfBoxOfFreight>
+
+    Domain: 
+        <lo/freight#BoxOfFreight>
+    
+    Range: 
+        xsd:positiveInteger
+    
+    
+DataProperty: <lo/freight#hasMarketPriceOfFreightValue>
+
+    Domain: 
+        <lo/freight#Freight>
+    
+    Range: 
+        xsd:double
+    
+    
+DataProperty: <lo/freight#hasControlledTemperatureValue>
+
+    Domain: 
+        <lo/freight#ControlledTemperature>
+    
+    Range: 
+        xsd:double
+    
+    
+DataProperty: <lo/freight#hasDescriptionOfFreight>
+
+    Domain: 
+        <lo/freight#Freight>
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: <lo/freight#hasNameOfFreight>
+
+    Domain: 
+        <lo/freight#Freight>
+    
+    Range: 
+        xsd:string
+    
+    
+DataProperty: <lo/freight#hasVolumeOfFreightValue>
+
+    Domain: 
+        <lo/freight#VolumeOfFreight>
+    
+    Range: 
+        xsd:double
+    
+    
+Class: <lo/freight#WeightOfFreightUnitOfMeasurement>
+
+    SubClassOf: 
+        <lo/freight#WeightOfFreight>
+    
+    
+Class: <lo/freight#NonPerishableFreight>
+
+    SubClassOf: 
+        <lo/freight#PerishabilityOfFreight>
+    
+    DisjointWith: 
+        <lo/freight#PerishableFreight>
+    
+    
+Class: <lo/freight#GasState>
+
+    SubClassOf: 
+        <lo/freight#AggregationStateOfFreight>
+    
+    
+Class: <lo/freight#Container>
+
+    SubClassOf: 
+        <lo/freight#BoxOfFreight>
+    
+    
+Class: <lo/freight#LiquidState>
+
+    SubClassOf: 
+        <lo/freight#AggregationStateOfFreight>
+    
+    
+Class: <lo/freight#BoxOfFreight>
+
+    SubClassOf: 
+        <lo/freight#LogisticResource>,
+        <lo/freight#hasNumberOfBoxOfFreight> only xsd:positiveInteger
+    
+    
+Class: <lo/freight#QuantifiableTraitsOfFreight>
+
+    SubClassOf: 
+        <lo/freight#LogisticResource>
+    
+    
+Class: <lo/freight#PerishableFreight>
+
+    SubClassOf: 
+        <lo/freight#PerishabilityOfFreight>
+    
+    DisjointWith: 
+        <lo/freight#NonPerishableFreight>
+    
+    
+Class: <lo/freight#AggregationStateOfFreight>
+
+    SubClassOf: 
+        <lo/freight#LogisticResource>
+    
+    
+Class: <lo/freight#SpecialConditions>
+
+    SubClassOf: 
+        <lo/freight#SpecialConditionsOfFreight>
+    
+    DisjointWith: 
+        <lo/freight#NoSpecialConditions>
+    
+    
+Class: <lo/freight#PerishabilityOfFreight>
+
+    SubClassOf: 
+        <lo/freight#LogisticResource>
+    
+    
+Class: <lo/freight#MarketPriceOfFreight>
+
+    SubClassOf: 
+        <lo/freight#hasMarketPriceUnitOfMeasurement> exactly 1 <lo/freight#MarketPriceOfFreightCurrency>,
+        <lo/freight#hasMarketPriceUnitOfMeasurement> only <lo/freight#MarketPriceOfFreightCurrency>,
+        <lo/freight#QuantifiableTraitsOfFreight>,
+        <lo/freight#hasMarketPriceOfFreightValue> only xsd:double
+    
+    
+Class: <lo/freight#Fahrenheit>
+
+    SubClassOf: 
+        <lo/freight#TemperatureUnitOfMeasure>
+    
+    
+Class: <lo/freight#Celsius>
+
+    SubClassOf: 
+        <lo/freight#TemperatureUnitOfMeasure>
+    
+    
+Class: <lo/freight#Freight>
+
+    SubClassOf: 
+        <lo/freight#hasStateOfAggregationfOfFreight> some <lo/freight#AggregationStateOfFreight>,
+        <lo/freight#hasSpecialConditionsOfFreight> some <lo/freight#SpecialConditionsOfFreight>,
+        <lo/freight#hasQuantifiableTraitsOfFreight> exactly 3 <lo/freight#QuantifiableTraitsOfFreight>,
+        <lo/freight#hasDescriptionOfFreight> only xsd:string,
+        <lo/freight#LogisticResource>,
+        <lo/freight#hasPerishabilityOfFreight> some <lo/freight#PerishabilityOfFreight>,
+        <lo/freight#hasNameOfFreight> only xsd:string,
+        <lo/freight#hasQuantifiableTraitsOfFreight> only <lo/freight#QuantifiableTraitsOfFreight>,
+        <lo/freight#hasSpecialConditionsOfFreight> only <lo/freight#SpecialConditionsOfFreight>,
+        <lo/freight#hasPerishabilityOfFreight> only <lo/freight#PerishabilityOfFreight>,
+        <lo/freight#hasStateOfAggregationfOfFreight> only <lo/freight#AggregationStateOfFreight>
+    
+    
+Class: <lo/freight#OversizedFreight>
+
+    SubClassOf: 
+        <lo/freight#SpecialConditions>
+    
+    
+Class: <lo/freight#DangerousFreight>
+
+    SubClassOf: 
+        <lo/freight#SpecialConditions>
+    
+    
+Class: <lo/freight#WeightOfFreight>
+
+    SubClassOf: 
+        <lo/freight#hasWeightOfFreightUnitOfMeasurement> only <lo/freight#WeightOfFreightUnitOfMeasurement>,
+        <lo/freight#QuantifiableTraitsOfFreight>,
+        <lo/freight#hasWeightOfFreightValue> only xsd:double,
+        <lo/freight#hasWeightOfFreightUnitOfMeasurement> exactly 1 <lo/freight#WeightOfFreightUnitOfMeasurement>
+    
+    
+Class: <lo/freight#SolidState>
+
+    SubClassOf: 
+        <lo/freight#AggregationStateOfFreight>
+    
+    
+Class: <lo/freight#Tanker>
+
+    SubClassOf: 
+        <lo/freight#BoxOfFreight>
+    
+    
+Class: <lo/freight#ControlledTemperature>
+
+    SubClassOf: 
+        <lo/freight#hasControlledTemperatureValue> only xsd:double,
+        <lo/freight#hasTemperatureUnitOfMeasurement> only <lo/freight#TemperatureUnitOfMeasure>,
+        <lo/freight#hasTemperatureUnitOfMeasurement> exactly 1 <lo/freight#TemperatureUnitOfMeasure>,
+        <lo/freight#SpecialConditions>
+    
+    
+Class: <lo/freight#MarketPriceOfFreightCurrency>
+
+    SubClassOf: 
+        <lo/freight#MarketPriceOfFreight>
+    
+    
+Class: <lo/freight#TemperatureUnitOfMeasure>
+
+    SubClassOf: 
+        <lo/freight#ControlledTemperature>
+    
+    
+Class: <lo/freight#LogisticResource>
+
+    
+Class: <lo/freight#Kelvin>
+
+    SubClassOf: 
+        <lo/freight#TemperatureUnitOfMeasure>
+    
+    
+Class: <lo/freight#SpecialConditionsOfFreight>
+
+    SubClassOf: 
+        <lo/freight#LogisticResource>
+    
+    
+Class: <lo/freight#NoSpecialConditions>
+
+    SubClassOf: 
+        <lo/freight#SpecialConditionsOfFreight>
+    
+    DisjointWith: 
+        <lo/freight#SpecialConditions>
+    
+    
+Class: <lo/freight#VolumeOfFreightUnitOfMeasurement>
+
+    SubClassOf: 
+        <lo/freight#VolumeOfFreight>
+    
+    
+Class: <lo/freight#Package>
+
+    SubClassOf: 
+        <lo/freight#BoxOfFreight>
+    
+    
+Class: <lo/freight#Pallet>
+
+    SubClassOf: 
+        <lo/freight#BoxOfFreight>
+    
+    
+Class: <lo/freight#VolumeOfFreight>
+
+    SubClassOf: 
+        <lo/freight#hasVolumeWeightOfFreightUnitOfMeasument> exactly 1 <lo/freight#VolumeOfFreightUnitOfMeasurement>,
+        <lo/freight#hasVolumeOfFreightValue> only xsd:double,
+        <lo/freight#QuantifiableTraitsOfFreight>,
+        <lo/freight#hasVolumeWeightOfFreightUnitOfMeasument> only <lo/freight#VolumeOfFreightUnitOfMeasurement>
+    
+    
+DisjointClasses: 
+    <lo/freight#Celsius>,<lo/freight#Fahrenheit>,<lo/freight#Kelvin>
+
+DisjointClasses: 
+    <lo/freight#Container>,<lo/freight#Package>,<lo/freight#Pallet>,<lo/freight#Tanker>
+
+DisjointClasses: 
+    <lo/freight#GasState>,<lo/freight#LiquidState>,<lo/freight#SolidState>
+
