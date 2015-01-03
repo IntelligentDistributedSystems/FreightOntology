@@ -156,6 +156,15 @@ DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight
         xsd:double
     
     
+DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasTypeOfAnimal>
+
+    Domain: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LiveAnimal>
+    
+    Range: 
+        xsd:string
+    
+    
 DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasDescriptionOfFreight>
 
     Domain: 
@@ -207,7 +216,7 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#GasSta
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#BoxOfFreight>
 
     SubClassOf: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticResource>,
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject>,
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasNumberOfBoxOfFreight> only xsd:positiveInteger
     
     
@@ -223,10 +232,19 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Liquid
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#AggregationStateOfFreight>
     
     
+Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Mixer>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditions>
+    
+    
+Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject>
+
+    
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#QuantifiableTraitsOfFreight>
 
     SubClassOf: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticResource>
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject>
     
     
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#PerishableFreight>
@@ -241,7 +259,7 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Perish
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#AggregationStateOfFreight>
 
     SubClassOf: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticResource>
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject>
     
     
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditions>
@@ -250,13 +268,13 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Specia
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditionsOfFreight>
     
     DisjointWith: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#NoSpecialConditions>
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#NonSpecialConditions>
     
     
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#PerishabilityOfFreight>
 
     SubClassOf: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticResource>
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject>
     
     
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Fahrenheit>
@@ -274,6 +292,12 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Market
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasMarketPriceOfFreightValue> only xsd:double
     
     
+Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#NonBoxOfFreight>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#BoxOfFreight>
+    
+    
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Celsius>
 
     SubClassOf: 
@@ -287,13 +311,26 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Freigh
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasSpecialConditionsOfFreight> some <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditionsOfFreight>,
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasQuantifiableTraitsOfFreight> exactly 3 <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#QuantifiableTraitsOfFreight>,
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasDescriptionOfFreight> only xsd:string,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticResource>,
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasPerishabilityOfFreight> some <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#PerishabilityOfFreight>,
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject>,
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasNameOfFreight> only xsd:string,
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasQuantifiableTraitsOfFreight> only <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#QuantifiableTraitsOfFreight>,
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasSpecialConditionsOfFreight> only <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditionsOfFreight>,
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasPerishabilityOfFreight> only <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#PerishabilityOfFreight>,
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasStateOfAggregationfOfFreight> only <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#AggregationStateOfFreight>
+    
+    
+Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogsTransport>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#NonBoxOfFreight>
+    
+    
+Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LiveAnimal>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasTypeOfAnimal> exactly 1 xsd:string,
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#NonBoxOfFreight>
     
     
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#OversizedFreight>
@@ -323,10 +360,25 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SolidS
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#AggregationStateOfFreight>
     
     
+Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#NonSpecialConditions>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditionsOfFreight>
+    
+    DisjointWith: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditions>
+    
+    
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Tanker>
 
     SubClassOf: 
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#BoxOfFreight>
+    
+    
+Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#GrainTransport>
+
+    SubClassOf: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#NonBoxOfFreight>
     
     
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#ControlledTemperature>
@@ -350,9 +402,6 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Market
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#MarketPriceOfFreight>
     
     
-Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticResource>
-
-    
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Kelvin>
 
     SubClassOf: 
@@ -362,16 +411,7 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Kelvin
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditionsOfFreight>
 
     SubClassOf: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticResource>
-    
-    
-Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#NoSpecialConditions>
-
-    SubClassOf: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditionsOfFreight>
-    
-    DisjointWith: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditions>
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject>
     
     
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreightUnitOfMeasurement>
@@ -403,6 +443,9 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Pallet
     
 DisjointClasses: 
     <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Container>,<http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Package>,<http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Pallet>,<http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Tanker>,<http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreight>
+
+DisjointClasses: 
+    <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Container>,<http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LiveAnimal>,<http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject>,<http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Package>,<http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Pallet>,<http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Tanker>
 
 DisjointClasses: 
     <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Celsius>,<http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Fahrenheit>,<http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Kelvin>,<http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreight>
