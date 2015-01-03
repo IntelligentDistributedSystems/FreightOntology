@@ -16,13 +16,16 @@ Datatype: xsd:dateTimeStamp
 Datatype: xsd:boolean
 
     
-Datatype: xsd:string
-
-    
 Datatype: xsd:long
 
     
+Datatype: xsd:string
+
+    
 Datatype: xsd:dateTime
+
+    
+Datatype: xsd:double
 
     
 ObjectProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasLocationPoints>
@@ -64,19 +67,19 @@ DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled
         xsd:dateTime
     
     
-DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasOwnerName>
+DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDestinationName>
 
     Domain: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request>
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination>
     
     Range: 
         xsd:string
     
     
-DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDestinationName>
+DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasOwnerName>
 
     Domain: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination>
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request>
     
     Range: 
         xsd:string
@@ -115,16 +118,7 @@ DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled
         <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDestination>
     
     Range: 
-        xsd:string
-    
-    
-DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasOwnerID>
-
-    Domain: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request>
-    
-    Range: 
-        xsd:long
+        xsd:double
     
     
 DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasStartMomentOfDischarge>
@@ -134,6 +128,15 @@ DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled
     
     Range: 
         xsd:dateTime
+    
+    
+DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasOwnerID>
+
+    Domain: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request>
+    
+    Range: 
+        xsd:long
     
     
 DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasTTL>
@@ -154,15 +157,6 @@ DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled
         xsd:long
     
     
-DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDestinationLatitude>
-
-    Domain: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDestination>
-    
-    Range: 
-        xsd:string
-    
-    
 DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDispatchName>
 
     Domain: 
@@ -172,13 +166,22 @@ DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled
         xsd:string
     
     
+DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDestinationLatitude>
+
+    Domain: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDestination>
+    
+    Range: 
+        xsd:double
+    
+    
 DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDispatchLatitude>
 
     Domain: 
         <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDispatch>
     
     Range: 
-        xsd:string
+        xsd:double
     
     
 DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDispatchLongitude>
@@ -187,16 +190,16 @@ DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled
         <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDispatch>
     
     Range: 
-        xsd:string
+        xsd:double
     
     
-Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDispatch>
+Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination>
 
     SubClassOf: 
         <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints>
     
     
-Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination>
+Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDispatch>
 
     SubClassOf: 
         <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints>
@@ -211,7 +214,9 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontolo
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDestination>
 
     SubClassOf: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination>
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDestinationLatitude> exactly 1 xsd:double,
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination>,
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDestinationLongitude> exactly 1 xsd:double
     
     
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#AdressDestination>
@@ -232,7 +237,9 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontolo
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDispatch>
 
     SubClassOf: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDispatch>
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDispatch>,
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDispatchLatitude> exactly 1 xsd:double,
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDispatchLongitude> exactly 1 xsd:double
     
     
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request>
