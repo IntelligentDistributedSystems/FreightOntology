@@ -55,6 +55,18 @@ ObjectProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freig
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#TemperatureUnitOfMeasure>
     
     
+ObjectProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasVolumeOfFreightUnitOfMeasument>
+
+    SubPropertyOf: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasQuantifiableTraitsOfFreight>
+    
+    Domain: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Freight>
+    
+    Range: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreight>
+    
+    
 ObjectProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasMarketPriceUnitOfMeasurement>
 
     SubPropertyOf: 
@@ -65,18 +77,6 @@ ObjectProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freig
     
     Range: 
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#MarketPriceOfFreight>
-    
-    
-ObjectProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasVolumeWeightOfFreightUnitOfMeasument>
-
-    SubPropertyOf: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasQuantifiableTraitsOfFreight>
-    
-    Domain: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Freight>
-    
-    Range: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreight>
     
     
 ObjectProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasSpecialConditionsOfFreight>
@@ -441,10 +441,10 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Packag
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreight>
 
     SubClassOf: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasVolumeWeightOfFreightUnitOfMeasument> exactly 1 <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreightUnitOfMeasurement>,
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasVolumeOfFreightUnitOfMeasument> exactly 1 <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreightUnitOfMeasurement>,
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasVolumeOfFreightValue> only xsd:double,
         <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#QuantifiableTraitsOfFreight>,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasVolumeWeightOfFreightUnitOfMeasument> only <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreightUnitOfMeasurement>
+        <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasVolumeOfFreightUnitOfMeasument> only <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreightUnitOfMeasurement>
     
     
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Pallet>
