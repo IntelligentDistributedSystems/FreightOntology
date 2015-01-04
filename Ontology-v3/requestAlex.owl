@@ -145,7 +145,7 @@ DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled
         <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request>
     
     Range: 
-        xsd:dateTimeStamp
+        xsd:dateTime
     
     
 DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasRequestID>
@@ -196,12 +196,14 @@ DataProperty: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination>
 
     SubClassOf: 
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints>
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints>,
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDestinationName> exactly 1 xsd:string
     
     
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDispatch>
 
     SubClassOf: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDispatchName> exactly 1 xsd:string,
         <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints>
     
     
@@ -245,23 +247,17 @@ Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontolo
 Class: <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request>
 
     SubClassOf: 
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasRequestID> exactly 1 xsd:long,
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasLocationPoints> exactly 2 <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints>,
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasTTL> exactly 1 xsd:dateTime,
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDateOfRequest> exactly 1 xsd:dateTime,
         <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasFinishMomentOfDischarge> exactly 1 xsd:dateTime,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDispatchLongitude> exactly 1 xsd:string,
         <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasStartMomentOfCharge> exactly 1 xsd:dateTime,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDestinationLongitude> exactly 1 xsd:string,
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasOwnerName> exactly 1 xsd:string,
         <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasLocationPoints> only <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints>,
         <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasFinishMomentOfCharge> exactly 1 xsd:dateTime,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDestinationLatitude> exactly 1 xsd:string,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasRequestID> exactly 1 xsd:long,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDateOfRequest> exactly 1 xsd:dateTime,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasLocationPoints> exactly 2 <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints>,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasOwnerName> exactly 1 xsd:string,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDispatchName> exactly 1 xsd:string,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasTTL> exactly 1 xsd:dateTimeStamp,
         <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasOwnerID> exactly 1 xsd:long,
         <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#isJuridicPerson> exactly 1 xsd:boolean,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDispatchLatitude> exactly 1 xsd:string,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasStartMomentOfDischarge> exactly 1 xsd:dateTime,
-        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDestinationName> exactly 1 xsd:string
+        <http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasStartMomentOfDischarge> exactly 1 xsd:dateTime
     
     
