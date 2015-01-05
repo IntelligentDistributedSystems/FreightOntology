@@ -97,18 +97,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasSpecialConditions -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasSpecialConditions">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#ControlledTemperature"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#HazardousFreight"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#OversizedFreight"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditions"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasSpecialConditionsOfFreight"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasSpecialConditionsOfFreight -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasSpecialConditionsOfFreight">
@@ -132,7 +120,6 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasTemperatureUnitOfMeasurement">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#ControlledTemperature"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#TemperatureUnitOfMeasure"/>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasSpecialConditions"/>
     </owl:ObjectProperty>
     
 
@@ -716,20 +703,18 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#GasState"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LiquidState"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SolidState"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreight"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Celsius"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Fahrenheit"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Kelvin"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Grain"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LiveAnimal"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Logs"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#RawMaterial"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Tanker"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#GasState"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LiquidState"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SolidState"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreight"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -744,10 +729,11 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Celsius"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Fahrenheit"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Kelvin"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreight"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Grain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LiveAnimal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Logs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#RawMaterial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Tanker"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>
