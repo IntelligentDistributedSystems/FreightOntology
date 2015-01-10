@@ -5,7 +5,6 @@
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
-    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
 ]>
@@ -17,8 +16,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight"/>
     
 
@@ -109,8 +107,8 @@
     <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasStateOfAggregationfOfFreight -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasStateOfAggregationfOfFreight">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#AggregationStateOfFreight"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#AggregationStateOfFreight"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#AggregationStateOfFreight"/>
     </owl:ObjectProperty>
     
 
@@ -242,6 +240,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#AggregationStateOfFreight">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject"/>
+        <rdfs:comment>Describes the aggregation states of the freight (from physics).</rdfs:comment>
     </owl:Class>
     
 
@@ -256,6 +255,7 @@
                 <owl:allValuesFrom rdf:resource="&xsd;positiveInteger"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Wrapping of the freight.</rdfs:comment>
     </owl:Class>
     
 
@@ -272,6 +272,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Container">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#BoxOfFreight"/>
+        <rdfs:comment>Shipping container that is a container with strenght suitable to withstand shipment, storage, and handling.</rdfs:comment>
     </owl:Class>
     
 
@@ -299,6 +300,39 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#TemperatureUnitOfMeasure"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Describes temperature conditions of the freight.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#EUR1 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#EUR1">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Pallet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#EUR2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#EUR2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Pallet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#EUR3 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#EUR3">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Pallet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#EUR6 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#EUR6">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Pallet"/>
     </owl:Class>
     
 
@@ -317,50 +351,19 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasQuantifiableTraitsOfFreight"/>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#QuantifiableTraitsOfFreight"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasSpecialConditionsOfFreight"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditionsOfFreight"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasStateOfAggregationfOfFreight"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#AggregationStateOfFreight"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasPerishabilityOfFreight"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#PerishabilityOfFreight"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasPerishabilityOfFreight"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#PerishabilityOfFreight"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasSpecialConditionsOfFreight"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditionsOfFreight"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasDescriptionOfFreight"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasNameOfFreight"/>
                 <owl:allValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasNameOfFreight"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasDescriptionOfFreight"/>
                 <owl:allValuesFrom rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -372,10 +375,42 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasPerishabilityOfFreight"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#PerishabilityOfFreight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasSpecialConditionsOfFreight"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditionsOfFreight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasStateOfAggregationfOfFreight"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#AggregationStateOfFreight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasSpecialConditionsOfFreight"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditionsOfFreight"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasQuantifiableTraitsOfFreight"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#QuantifiableTraitsOfFreight"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasQuantifiableTraitsOfFreight"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#QuantifiableTraitsOfFreight"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">3</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Describes the traits of treight.</rdfs:comment>
     </owl:Class>
     
 
@@ -384,6 +419,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#GasState">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#AggregationStateOfFreight"/>
+        <rdfs:comment>Gas aggregation state of freight.</rdfs:comment>
     </owl:Class>
     
 
@@ -400,6 +436,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#HazardousFreight">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditions"/>
+        <rdfs:comment>Conditions that prevent the risk to life, property and environment of the cargo.</rdfs:comment>
     </owl:Class>
     
 
@@ -416,6 +453,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LiquidState">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#AggregationStateOfFreight"/>
+        <rdfs:comment>Liquid aggregation state of freight.</rdfs:comment>
     </owl:Class>
     
 
@@ -437,7 +475,9 @@
 
     <!-- http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject">
+        <rdfs:comment>Describes the freight and its transportation conditions.</rdfs:comment>
+    </owl:Class>
     
 
 
@@ -455,9 +495,8 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#QuantifiableTraitsOfFreight"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasMarketPriceUnitOfMeasurement"/>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#MarketPriceOfFreightCurrency"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasMarketPriceOfFreightValue"/>
+                <owl:allValuesFrom rdf:resource="&xsd;double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -468,10 +507,12 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasMarketPriceOfFreightValue"/>
-                <owl:allValuesFrom rdf:resource="&xsd;double"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasMarketPriceUnitOfMeasurement"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#MarketPriceOfFreightCurrency"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>The current  market value of the freight.</rdfs:comment>
     </owl:Class>
     
 
@@ -480,6 +521,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#MarketPriceOfFreightCurrency">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#MarketPriceOfFreight"/>
+        <rdfs:comment>http://www.daml.ecs.soton.ac.uk/ont/currency.daml</rdfs:comment>
     </owl:Class>
     
 
@@ -488,6 +530,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#MixerFreight">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditions"/>
+        <rdfs:comment>The cargo needs mixing conditions for proper transportation of the cargo (e.g. concrete).</rdfs:comment>
     </owl:Class>
     
 
@@ -496,6 +539,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#NonBoxOfFreight">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#BoxOfFreight"/>
+        <rdfs:comment>Freight that does not have wrapping provided.</rdfs:comment>
     </owl:Class>
     
 
@@ -514,6 +558,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#NonSpecialConditions">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditionsOfFreight"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditions"/>
+        <rdfs:comment>Does not require special conditions for proper transportation.</rdfs:comment>
     </owl:Class>
     
 
@@ -522,6 +567,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#OversizedFreight">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditions"/>
+        <rdfs:comment>Freight exceds the legal dimensions.</rdfs:comment>
     </owl:Class>
     
 
@@ -530,6 +576,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Package">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#BoxOfFreight"/>
+        <rdfs:comment>Packages will be accepted for transportation, provided the dimensions of the package are within 76,2 cm x 119,38 cm x 208,28 cm.
+May not exceed 34 kg per piece</rdfs:comment>
+        <rdfs:comment></rdfs:comment>
     </owl:Class>
     
 
@@ -538,6 +587,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Pallet">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#BoxOfFreight"/>
+        <rdfs:comment>A pallet is the structural foundation of a unit load which allows handling and storage efficiencies.</rdfs:comment>
     </owl:Class>
     
 
@@ -546,6 +596,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#PerishabilityOfFreight">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject"/>
+        <rdfs:comment>Describes whether the freight is perishable or not.</rdfs:comment>
     </owl:Class>
     
 
@@ -562,6 +613,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#QuantifiableTraitsOfFreight">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject"/>
+        <rdfs:comment>Describes traits of freight that can be quantified regarding some standards.</rdfs:comment>
     </owl:Class>
     
 
@@ -570,6 +622,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#RawMaterial">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#NonBoxOfFreight"/>
+        <rdfs:comment>Other types of raw matirial than: grein, logs, live animals or substances that need to be transported in a tanker.</rdfs:comment>
     </owl:Class>
     
 
@@ -578,6 +631,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SolidState">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#AggregationStateOfFreight"/>
+        <rdfs:comment>Solid aggregation state of freight.</rdfs:comment>
     </owl:Class>
     
 
@@ -586,6 +640,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditions">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditionsOfFreight"/>
+        <rdfs:comment>Describes special conditions for proper transportation.</rdfs:comment>
     </owl:Class>
     
 
@@ -594,6 +649,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditionsOfFreight">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LogisticsObject"/>
+        <rdfs:comment>Describes whether the freight needs any special conditions for proper transportation.</rdfs:comment>
     </owl:Class>
     
 
@@ -610,6 +666,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#TemperatureUnitOfMeasure">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#ControlledTemperature"/>
+        <rdfs:comment></rdfs:comment>
     </owl:Class>
     
 
@@ -618,6 +675,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#ValuableFreight">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#SpecialConditions"/>
+        <rdfs:comment>Transport of extremely valuable goods (e.g. &gt; 1 million euro).</rdfs:comment>
     </owl:Class>
     
 
@@ -626,13 +684,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreight">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#QuantifiableTraitsOfFreight"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasVolumeOfFreightUnitOfMeasument"/>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreightUnitOfMeasurement"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasVolumeOfFreightValue"/>
@@ -645,6 +696,14 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreightUnitOfMeasurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasVolumeOfFreightUnitOfMeasument"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreightUnitOfMeasurement"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Total volume of freight.</rdfs:comment>
     </owl:Class>
     
 
@@ -653,6 +712,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreightUnitOfMeasurement">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#VolumeOfFreight"/>
+        <rdfs:comment>http://idi.fundacionctic.org/muo/muo-vocab.html</rdfs:comment>
     </owl:Class>
     
 
@@ -670,16 +730,17 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasWeightOfFreightUnitOfMeasurement"/>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#WeightOfFreightUnitOfMeasurement"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#WeightOfFreightUnitOfMeasurement"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#hasWeightOfFreightUnitOfMeasurement"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#WeightOfFreightUnitOfMeasurement"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#WeightOfFreightUnitOfMeasurement"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:comment>Total weight of freight.</rdfs:comment>
     </owl:Class>
     
 
@@ -688,6 +749,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#WeightOfFreightUnitOfMeasurement">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#WeightOfFreight"/>
+        <rdfs:comment>http://idi.fundacionctic.org/muo/muo-vocab.html</rdfs:comment>
     </owl:Class>
     
 
@@ -700,6 +762,25 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#EUR1"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#EUR2"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#EUR3"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#EUR6"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Grain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LiveAnimal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Logs"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#RawMaterial"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Tanker"/>
+        </owl:members>
+    </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
@@ -726,19 +807,9 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Pallet"/>
         </owl:members>
     </rdf:Description>
-    <rdf:Description>
-        <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
-        <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Grain"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#LiveAnimal"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Logs"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#RawMaterial"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2014/11/freight#Tanker"/>
-        </owl:members>
-    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->
 
