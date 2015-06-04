@@ -9,13 +9,13 @@
 ]>
 
 
-<rdf:RDF xmlns="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#"
-     xml:base="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59"
+<rdf:RDF xmlns="lob#"
+     xml:base="lob"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59"/>
+    <owl:Ontology rdf:about="lob"/>
     
 
 
@@ -30,56 +30,56 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasTypeOfFuel -->
+    <!-- lob#hasTypeOfFuel -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasTypeOfFuel">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsResource"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfFuel"/>
+    <owl:ObjectProperty rdf:about="lob#hasTypeOfFuel">
+        <rdfs:domain rdf:resource="lob#LogisticsResource"/>
+        <rdfs:range rdf:resource="lob#TypeOfFuel"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleDimensions -->
+    <!-- lob#hasVehicleDimensions -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleDimensions">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsVehicle"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleDimensions"/>
+    <owl:ObjectProperty rdf:about="lob#hasVehicleDimensions">
+        <rdfs:domain rdf:resource="lob#LogisticsVehicle"/>
+        <rdfs:range rdf:resource="lob#VehicleDimensions"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleHomeLocation -->
+    <!-- lob#hasVehicleHomeLocation -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleHomeLocation">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsVehicle"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleHomeLocation"/>
+    <owl:ObjectProperty rdf:about="lob#hasVehicleHomeLocation">
+        <rdfs:domain rdf:resource="lob#LogisticsVehicle"/>
+        <rdfs:range rdf:resource="lob#VehicleHomeLocation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleSpecialConditions -->
+    <!-- lob#hasVehicleSpecialConditions -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleSpecialConditions">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsVehicle"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleSpecialConditions"/>
+    <owl:ObjectProperty rdf:about="lob#hasVehicleSpecialConditions">
+        <rdfs:domain rdf:resource="lob#LogisticsVehicle"/>
+        <rdfs:range rdf:resource="lob#VehicleSpecialConditions"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isDedicatedVehicle -->
+    <!-- lob#isDedicatedVehicle -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isDedicatedVehicle">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DedicatedVehicle"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsVehicle"/>
+    <owl:ObjectProperty rdf:about="lob#isDedicatedVehicle">
+        <rdfs:range rdf:resource="lob#DedicatedVehicle"/>
+        <rdfs:domain rdf:resource="lob#LogisticsVehicle"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isTypeOfVehicle -->
+    <!-- lob#isTypeOfVehicle -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isTypeOfVehicle">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsVehicle"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfVehicle"/>
+    <owl:ObjectProperty rdf:about="lob#isTypeOfVehicle">
+        <rdfs:domain rdf:resource="lob#LogisticsVehicle"/>
+        <rdfs:range rdf:resource="lob#TypeOfVehicle"/>
     </owl:ObjectProperty>
     
 
@@ -95,118 +95,118 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasHomeLocationLatitude -->
+    <!-- lob#hasHomeLocationLatitude -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasHomeLocationLatitude">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#GpsHomeLocation"/>
+    <owl:DatatypeProperty rdf:about="lob#hasHomeLocationLatitude">
+        <rdfs:domain rdf:resource="lob#GpsHomeLocation"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasHomeLocationLongitude -->
+    <!-- lob#hasHomeLocationLongitude -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasHomeLocationLongitude">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#GpsHomeLocation"/>
+    <owl:DatatypeProperty rdf:about="lob#hasHomeLocationLongitude">
+        <rdfs:domain rdf:resource="lob#GpsHomeLocation"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasOtherRestrictions -->
+    <!-- lob#hasOtherRestrictions -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasOtherRestrictions">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsVehicle"/>
+    <owl:DatatypeProperty rdf:about="lob#hasOtherRestrictions">
+        <rdfs:domain rdf:resource="lob#LogisticsVehicle"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasTypeOfAnimal -->
+    <!-- lob#hasTypeOfAnimal -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasTypeOfAnimal">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#AnimalsVehicle"/>
+    <owl:DatatypeProperty rdf:about="lob#hasTypeOfAnimal">
+        <rdfs:domain rdf:resource="lob#AnimalsVehicle"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleAvailabilityFinishTime -->
+    <!-- lob#hasVehicleAvailabilityFinishTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleAvailabilityFinishTime">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsVehicle"/>
+    <owl:DatatypeProperty rdf:about="lob#hasVehicleAvailabilityFinishTime">
+        <rdfs:domain rdf:resource="lob#LogisticsVehicle"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleAvailabilityStartTime -->
+    <!-- lob#hasVehicleAvailabilityStartTime -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleAvailabilityStartTime">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsVehicle"/>
+    <owl:DatatypeProperty rdf:about="lob#hasVehicleAvailabilityStartTime">
+        <rdfs:domain rdf:resource="lob#LogisticsVehicle"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleHeight -->
+    <!-- lob#hasVehicleHeight -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleHeight">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleDimensions"/>
+    <owl:DatatypeProperty rdf:about="lob#hasVehicleHeight">
+        <rdfs:domain rdf:resource="lob#VehicleDimensions"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleLength -->
+    <!-- lob#hasVehicleLength -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleLength">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleDimensions"/>
+    <owl:DatatypeProperty rdf:about="lob#hasVehicleLength">
+        <rdfs:domain rdf:resource="lob#VehicleDimensions"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleWidth -->
+    <!-- lob#hasVehicleWidth -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleWidth">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleDimensions"/>
+    <owl:DatatypeProperty rdf:about="lob#hasVehicleWidth">
+        <rdfs:domain rdf:resource="lob#VehicleDimensions"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isHazardous -->
+    <!-- lob#isHazardous -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isHazardous">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsVehicle"/>
+    <owl:DatatypeProperty rdf:about="lob#isHazardous">
+        <rdfs:domain rdf:resource="lob#LogisticsVehicle"/>
         <rdfs:range rdf:resource="&xsd;boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isVehicleOccupied -->
+    <!-- lob#isVehicleOccupied -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isVehicleOccupied">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsVehicle"/>
+    <owl:DatatypeProperty rdf:about="lob#isVehicleOccupied">
+        <rdfs:domain rdf:resource="lob#LogisticsVehicle"/>
         <rdfs:range rdf:resource="&xsd;boolean"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#maxControlledTemperature -->
+    <!-- lob#maxControlledTemperature -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#maxControlledTemperature">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#ControlledTemperatureVehicle"/>
+    <owl:DatatypeProperty rdf:about="lob#maxControlledTemperature">
+        <rdfs:domain rdf:resource="lob#ControlledTemperatureVehicle"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#minControlledTemperature -->
+    <!-- lob#minControlledTemperature -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#minControlledTemperature">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#ControlledTemperatureVehicle"/>
+    <owl:DatatypeProperty rdf:about="lob#minControlledTemperature">
+        <rdfs:domain rdf:resource="lob#ControlledTemperatureVehicle"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
     
@@ -223,61 +223,61 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#2AxelesVehicle -->
+    <!-- lob#2AxelesVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#2AxelesVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfVehicle"/>
+    <owl:Class rdf:about="lob#2AxelesVehicle">
+        <rdfs:subClassOf rdf:resource="lob#TypeOfVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#3AxelesVehicle -->
+    <!-- lob#3AxelesVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#3AxelesVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfVehicle"/>
+    <owl:Class rdf:about="lob#3AxelesVehicle">
+        <rdfs:subClassOf rdf:resource="lob#TypeOfVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#4AxelesVehicle -->
+    <!-- lob#4AxelesVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#4AxelesVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfVehicle"/>
+    <owl:Class rdf:about="lob#4AxelesVehicle">
+        <rdfs:subClassOf rdf:resource="lob#TypeOfVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#5AxelesVehicle -->
+    <!-- lob#5AxelesVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#5AxelesVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfVehicle"/>
+    <owl:Class rdf:about="lob#5AxelesVehicle">
+        <rdfs:subClassOf rdf:resource="lob#TypeOfVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#6AxelesVehicle -->
+    <!-- lob#6AxelesVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#6AxelesVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfVehicle"/>
+    <owl:Class rdf:about="lob#6AxelesVehicle">
+        <rdfs:subClassOf rdf:resource="lob#TypeOfVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#AddressHomeLocation -->
+    <!-- lob#AddressHomeLocation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#AddressHomeLocation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleHomeLocation"/>
+    <owl:Class rdf:about="lob#AddressHomeLocation">
+        <rdfs:subClassOf rdf:resource="lob#VehicleHomeLocation"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#AnimalsVehicle -->
+    <!-- lob#AnimalsVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#AnimalsVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DedicatedVehicle"/>
+    <owl:Class rdf:about="lob#AnimalsVehicle">
+        <rdfs:subClassOf rdf:resource="lob#DedicatedVehicle"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasTypeOfAnimal"/>
+                <owl:onProperty rdf:resource="lob#hasTypeOfAnimal"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;string"/>
             </owl:Restriction>
@@ -286,122 +286,52 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#BackDumpWagon -->
+    <!-- lob#BackDumpWagon -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#BackDumpWagon">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DumpWagon"/>
+    <owl:Class rdf:about="lob#BackDumpWagon">
+        <rdfs:subClassOf rdf:resource="lob#DumpWagon"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#BiogasFuel -->
+    <!-- lob#BiogasFuel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#BiogasFuel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfFuel"/>
+    <owl:Class rdf:about="lob#BiogasFuel">
+        <rdfs:subClassOf rdf:resource="lob#TypeOfFuel"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#CanvasVehicle -->
+    <!-- lob#CanvasVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#CanvasVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleSpecialConditions"/>
+    <owl:Class rdf:about="lob#CanvasVehicle">
+        <rdfs:subClassOf rdf:resource="lob#VehicleSpecialConditions"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#CarsVehicle -->
+    <!-- lob#CarsVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#CarsVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DedicatedVehicle"/>
+    <owl:Class rdf:about="lob#CarsVehicle">
+        <rdfs:subClassOf rdf:resource="lob#DedicatedVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#ControlledTemperatureVehicle -->
+    <!-- lob#ControlledTemperatureVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#ControlledTemperatureVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleSpecialConditions"/>
+    <owl:Class rdf:about="lob#ControlledTemperatureVehicle">
+        <rdfs:subClassOf rdf:resource="lob#VehicleSpecialConditions"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#minControlledTemperature"/>
+                <owl:onProperty rdf:resource="lob#minControlledTemperature"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#maxControlledTemperature"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#Crane -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#Crane">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#Hydraulic"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DedicatedVehicle -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DedicatedVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsResource"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DieselFuel -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DieselFuel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfFuel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DumpWagon -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DumpWagon">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#Hydraulic"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#ElectricFuel -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#ElectricFuel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfFuel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#GasFuel -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#GasFuel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfFuel"/>
-    </owl:Class>
-    
-
-
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#GpsHomeLocation -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#GpsHomeLocation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleHomeLocation"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasHomeLocationLongitude"/>
-                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
-                <owl:onDataRange rdf:resource="&xsd;double"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasHomeLocationLatitude"/>
+                <owl:onProperty rdf:resource="lob#maxControlledTemperature"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;double"/>
             </owl:Restriction>
@@ -410,324 +340,394 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#GrainTransportVehicle -->
+    <!-- lob#Crane -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#GrainTransportVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DedicatedVehicle"/>
+    <owl:Class rdf:about="lob#Crane">
+        <rdfs:subClassOf rdf:resource="lob#Hydraulic"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#Hydraulic -->
+    <!-- lob#DedicatedVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#Hydraulic">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleSpecialConditions"/>
+    <owl:Class rdf:about="lob#DedicatedVehicle">
+        <rdfs:subClassOf rdf:resource="lob#LogisticsResource"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LPGFuel -->
+    <!-- lob#DieselFuel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LPGFuel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfFuel"/>
+    <owl:Class rdf:about="lob#DieselFuel">
+        <rdfs:subClassOf rdf:resource="lob#TypeOfFuel"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LateralDumpWagon -->
+    <!-- lob#DumpWagon -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LateralDumpWagon">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DumpWagon"/>
+    <owl:Class rdf:about="lob#DumpWagon">
+        <rdfs:subClassOf rdf:resource="lob#Hydraulic"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsResource -->
+    <!-- lob#ElectricFuel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsResource"/>
+    <owl:Class rdf:about="lob#ElectricFuel">
+        <rdfs:subClassOf rdf:resource="lob#TypeOfFuel"/>
+    </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsVehicle -->
+    <!-- lob#GasFuel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsResource"/>
+    <owl:Class rdf:about="lob#GasFuel">
+        <rdfs:subClassOf rdf:resource="lob#TypeOfFuel"/>
+    </owl:Class>
+    
+
+
+    <!-- lob#GpsHomeLocation -->
+
+    <owl:Class rdf:about="lob#GpsHomeLocation">
+        <rdfs:subClassOf rdf:resource="lob#VehicleHomeLocation"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isDedicatedVehicle"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DedicatedVehicle"/>
+                <owl:onProperty rdf:resource="lob#hasHomeLocationLongitude"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isHazardous"/>
+                <owl:onProperty rdf:resource="lob#hasHomeLocationLatitude"/>
+                <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="&xsd;double"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- lob#GrainTransportVehicle -->
+
+    <owl:Class rdf:about="lob#GrainTransportVehicle">
+        <rdfs:subClassOf rdf:resource="lob#DedicatedVehicle"/>
+    </owl:Class>
+    
+
+
+    <!-- lob#Hydraulic -->
+
+    <owl:Class rdf:about="lob#Hydraulic">
+        <rdfs:subClassOf rdf:resource="lob#VehicleSpecialConditions"/>
+    </owl:Class>
+    
+
+
+    <!-- lob#LPGFuel -->
+
+    <owl:Class rdf:about="lob#LPGFuel">
+        <rdfs:subClassOf rdf:resource="lob#TypeOfFuel"/>
+    </owl:Class>
+    
+
+
+    <!-- lob#LateralDumpWagon -->
+
+    <owl:Class rdf:about="lob#LateralDumpWagon">
+        <rdfs:subClassOf rdf:resource="lob#DumpWagon"/>
+    </owl:Class>
+    
+
+
+    <!-- lob#LogisticsResource -->
+
+    <owl:Class rdf:about="lob#LogisticsResource"/>
+    
+
+
+    <!-- lob#LogisticsVehicle -->
+
+    <owl:Class rdf:about="lob#LogisticsVehicle">
+        <rdfs:subClassOf rdf:resource="lob#LogisticsResource"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="lob#isDedicatedVehicle"/>
+                <owl:allValuesFrom rdf:resource="lob#DedicatedVehicle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="lob#isHazardous"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isDedicatedVehicle"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DedicatedVehicle"/>
+                <owl:onProperty rdf:resource="lob#isDedicatedVehicle"/>
+                <owl:someValuesFrom rdf:resource="lob#DedicatedVehicle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleAvailabilityStartTime"/>
+                <owl:onProperty rdf:resource="lob#hasVehicleAvailabilityStartTime"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleDimensions"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleDimensions"/>
+                <owl:onProperty rdf:resource="lob#hasVehicleDimensions"/>
+                <owl:someValuesFrom rdf:resource="lob#VehicleDimensions"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isTypeOfVehicle"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfVehicle"/>
+                <owl:onProperty rdf:resource="lob#isTypeOfVehicle"/>
+                <owl:allValuesFrom rdf:resource="lob#TypeOfVehicle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleAvailabilityFinishTime"/>
+                <owl:onProperty rdf:resource="lob#hasVehicleAvailabilityFinishTime"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleSpecialConditions"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleSpecialConditions"/>
+                <owl:onProperty rdf:resource="lob#hasVehicleSpecialConditions"/>
+                <owl:someValuesFrom rdf:resource="lob#VehicleSpecialConditions"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleHomeLocation"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleHomeLocation"/>
+                <owl:onProperty rdf:resource="lob#hasVehicleHomeLocation"/>
+                <owl:allValuesFrom rdf:resource="lob#VehicleHomeLocation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleDimensions"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleDimensions"/>
+                <owl:onProperty rdf:resource="lob#hasVehicleDimensions"/>
+                <owl:allValuesFrom rdf:resource="lob#VehicleDimensions"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasTypeOfFuel"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfFuel"/>
+                <owl:onProperty rdf:resource="lob#hasTypeOfFuel"/>
+                <owl:someValuesFrom rdf:resource="lob#TypeOfFuel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasOtherRestrictions"/>
+                <owl:onProperty rdf:resource="lob#hasOtherRestrictions"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleHomeLocation"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleHomeLocation"/>
+                <owl:onProperty rdf:resource="lob#hasVehicleHomeLocation"/>
+                <owl:someValuesFrom rdf:resource="lob#VehicleHomeLocation"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isVehicleOccupied"/>
+                <owl:onProperty rdf:resource="lob#isVehicleOccupied"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasTypeOfFuel"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfFuel"/>
+                <owl:onProperty rdf:resource="lob#hasTypeOfFuel"/>
+                <owl:allValuesFrom rdf:resource="lob#TypeOfFuel"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#isTypeOfVehicle"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfVehicle"/>
+                <owl:onProperty rdf:resource="lob#isTypeOfVehicle"/>
+                <owl:someValuesFrom rdf:resource="lob#TypeOfVehicle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogsVehicle -->
+    <!-- lob#LogsVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogsVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DedicatedVehicle"/>
+    <owl:Class rdf:about="lob#LogsVehicle">
+        <rdfs:subClassOf rdf:resource="lob#DedicatedVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#MixerVehicle -->
+    <!-- lob#MixerVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#MixerVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DedicatedVehicle"/>
+    <owl:Class rdf:about="lob#MixerVehicle">
+        <rdfs:subClassOf rdf:resource="lob#DedicatedVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#MoreThan6AxelesVehicle -->
+    <!-- lob#MoreThan6AxelesVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#MoreThan6AxelesVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfVehicle"/>
+    <owl:Class rdf:about="lob#MoreThan6AxelesVehicle">
+        <rdfs:subClassOf rdf:resource="lob#TypeOfVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#NonDedicatedVehicle -->
+    <!-- lob#NonDedicatedVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#NonDedicatedVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DedicatedVehicle"/>
+    <owl:Class rdf:about="lob#NonDedicatedVehicle">
+        <rdfs:subClassOf rdf:resource="lob#DedicatedVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#NonSpecialConditions -->
+    <!-- lob#NonSpecialConditions -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#NonSpecialConditions">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleSpecialConditions"/>
+    <owl:Class rdf:about="lob#NonSpecialConditions">
+        <rdfs:subClassOf rdf:resource="lob#VehicleSpecialConditions"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#CanvasVehicle"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#ControlledTemperatureVehicle"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#Hydraulic"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#OversizedVehicle"/>
+            <rdf:Description rdf:about="lob#CanvasVehicle"/>
+            <rdf:Description rdf:about="lob#ControlledTemperatureVehicle"/>
+            <rdf:Description rdf:about="lob#Hydraulic"/>
+            <rdf:Description rdf:about="lob#OversizedVehicle"/>
         </owl:disjointUnionOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#OversizedVehicle -->
+    <!-- lob#OversizedVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#OversizedVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleSpecialConditions"/>
+    <owl:Class rdf:about="lob#OversizedVehicle">
+        <rdfs:subClassOf rdf:resource="lob#VehicleSpecialConditions"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#PetrolFuel -->
+    <!-- lob#PetrolFuel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#PetrolFuel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfFuel"/>
+    <owl:Class rdf:about="lob#PetrolFuel">
+        <rdfs:subClassOf rdf:resource="lob#TypeOfFuel"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#PickupVehicle -->
+    <!-- lob#PickupVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#PickupVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#2AxelesVehicle"/>
+    <owl:Class rdf:about="lob#PickupVehicle">
+        <rdfs:subClassOf rdf:resource="lob#2AxelesVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#SelfChargingContainer -->
+    <!-- lob#SelfChargingContainer -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#SelfChargingContainer">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#Hydraulic"/>
+    <owl:Class rdf:about="lob#SelfChargingContainer">
+        <rdfs:subClassOf rdf:resource="lob#Hydraulic"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#Tailgate -->
+    <!-- lob#Tailgate -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#Tailgate">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#Hydraulic"/>
+    <owl:Class rdf:about="lob#Tailgate">
+        <rdfs:subClassOf rdf:resource="lob#Hydraulic"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TanPitVehicle -->
+    <!-- lob#TanPitVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TanPitVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#2AxelesVehicle"/>
+    <owl:Class rdf:about="lob#TanPitVehicle">
+        <rdfs:subClassOf rdf:resource="lob#2AxelesVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TankerVehicle -->
+    <!-- lob#TankerVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TankerVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DedicatedVehicle"/>
+    <owl:Class rdf:about="lob#TankerVehicle">
+        <rdfs:subClassOf rdf:resource="lob#DedicatedVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TruckVehicle -->
+    <!-- lob#TruckVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TruckVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#2AxelesVehicle"/>
+    <owl:Class rdf:about="lob#TruckVehicle">
+        <rdfs:subClassOf rdf:resource="lob#2AxelesVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfFuel -->
+    <!-- lob#TypeOfFuel -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfFuel">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsResource"/>
+    <owl:Class rdf:about="lob#TypeOfFuel">
+        <rdfs:subClassOf rdf:resource="lob#LogisticsResource"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfVehicle -->
+    <!-- lob#TypeOfVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#TypeOfVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsResource"/>
+    <owl:Class rdf:about="lob#TypeOfVehicle">
+        <rdfs:subClassOf rdf:resource="lob#LogisticsResource"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#UnitOfMeasurementForVehicleDimensions -->
+    <!-- lob#UnitOfMeasurementForVehicleDimensions -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#UnitOfMeasurementForVehicleDimensions">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleDimensions"/>
+    <owl:Class rdf:about="lob#UnitOfMeasurementForVehicleDimensions">
+        <rdfs:subClassOf rdf:resource="lob#VehicleDimensions"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#ValuableTransportVehicle -->
+    <!-- lob#ValuableTransportVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#ValuableTransportVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DedicatedVehicle"/>
+    <owl:Class rdf:about="lob#ValuableTransportVehicle">
+        <rdfs:subClassOf rdf:resource="lob#DedicatedVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VanVehicle -->
+    <!-- lob#VanVehicle -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VanVehicle">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#2AxelesVehicle"/>
+    <owl:Class rdf:about="lob#VanVehicle">
+        <rdfs:subClassOf rdf:resource="lob#2AxelesVehicle"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleDimensions -->
+    <!-- lob#VehicleDimensions -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleDimensions">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsResource"/>
+    <owl:Class rdf:about="lob#VehicleDimensions">
+        <rdfs:subClassOf rdf:resource="lob#LogisticsResource"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleWidth"/>
+                <owl:onProperty rdf:resource="lob#hasVehicleWidth"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleLength"/>
+                <owl:onProperty rdf:resource="lob#hasVehicleLength"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#hasVehicleHeight"/>
+                <owl:onProperty rdf:resource="lob#hasVehicleHeight"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;double"/>
             </owl:Restriction>
@@ -736,18 +736,18 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleHomeLocation -->
+    <!-- lob#VehicleHomeLocation -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleHomeLocation">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsResource"/>
+    <owl:Class rdf:about="lob#VehicleHomeLocation">
+        <rdfs:subClassOf rdf:resource="lob#LogisticsResource"/>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleSpecialConditions -->
+    <!-- lob#VehicleSpecialConditions -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#VehicleSpecialConditions">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#LogisticsResource"/>
+    <owl:Class rdf:about="lob#VehicleSpecialConditions">
+        <rdfs:subClassOf rdf:resource="lob#LogisticsResource"/>
     </owl:Class>
     
 
@@ -763,10 +763,10 @@
     <rdf:Description>
         <rdf:type rdf:resource="&owl;AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#Crane"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#DumpWagon"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#SelfChargingContainer"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-59#Tailgate"/>
+            <rdf:Description rdf:about="lob#Crane"/>
+            <rdf:Description rdf:about="lob#DumpWagon"/>
+            <rdf:Description rdf:about="lob#SelfChargingContainer"/>
+            <rdf:Description rdf:about="lob#Tailgate"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

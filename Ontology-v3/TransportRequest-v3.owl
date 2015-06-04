@@ -10,14 +10,14 @@
 ]>
 
 
-<rdf:RDF xmlns="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#"
-     xml:base="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56"
+<rdf:RDF xmlns="lob#"
+     xml:base="lob"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56"/>
+    <owl:Ontology rdf:about="lob"/>
     
 
 
@@ -73,26 +73,26 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasLocationPoints -->
+    <!-- lob#hasLocationPoints -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasLocationPoints">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request"/>
+    <owl:ObjectProperty rdf:about="lob#hasLocationPoints">
+        <rdfs:range rdf:resource="lob#LocationPoints"/>
+        <rdfs:domain rdf:resource="lob#Request"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDestination -->
+    <!-- lob#hasPointOfDestination -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDestination"/>
+    <owl:ObjectProperty rdf:about="lob#hasPointOfDestination"/>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDispatch -->
+    <!-- lob#hasPointOfDispatch -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDispatch">
-        <rdfs:range rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDispatch"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request"/>
+    <owl:ObjectProperty rdf:about="lob#hasPointOfDispatch">
+        <rdfs:range rdf:resource="lob#PointOfDispatch"/>
+        <rdfs:domain rdf:resource="lob#Request"/>
     </owl:ObjectProperty>
     
 
@@ -108,146 +108,146 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDateOfRequest -->
+    <!-- lob#hasDateOfRequest -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDateOfRequest">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request"/>
+    <owl:DatatypeProperty rdf:about="lob#hasDateOfRequest">
+        <rdfs:domain rdf:resource="lob#Request"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDestinationLatitude -->
+    <!-- lob#hasDestinationLatitude -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDestinationLatitude">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDestination"/>
+    <owl:DatatypeProperty rdf:about="lob#hasDestinationLatitude">
+        <rdfs:domain rdf:resource="lob#GpsCoordinatesDestination"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDestinationLongitude -->
+    <!-- lob#hasDestinationLongitude -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDestinationLongitude">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDestination"/>
+    <owl:DatatypeProperty rdf:about="lob#hasDestinationLongitude">
+        <rdfs:domain rdf:resource="lob#GpsCoordinatesDestination"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDispatchLatitude -->
+    <!-- lob#hasDispatchLatitude -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDispatchLatitude">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDispatch"/>
+    <owl:DatatypeProperty rdf:about="lob#hasDispatchLatitude">
+        <rdfs:domain rdf:resource="lob#GpsCoordinatesDispatch"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDispatchLongitude -->
+    <!-- lob#hasDispatchLongitude -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDispatchLongitude">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDispatch"/>
+    <owl:DatatypeProperty rdf:about="lob#hasDispatchLongitude">
+        <rdfs:domain rdf:resource="lob#GpsCoordinatesDispatch"/>
         <rdfs:range rdf:resource="&xsd;double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasFinishMomentOfCharge -->
+    <!-- lob#hasFinishMomentOfCharge -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasFinishMomentOfCharge">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request"/>
+    <owl:DatatypeProperty rdf:about="lob#hasFinishMomentOfCharge">
+        <rdfs:domain rdf:resource="lob#Request"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasFinishMomentOfDischarge -->
+    <!-- lob#hasFinishMomentOfDischarge -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasFinishMomentOfDischarge">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request"/>
+    <owl:DatatypeProperty rdf:about="lob#hasFinishMomentOfDischarge">
+        <rdfs:domain rdf:resource="lob#Request"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasOwnerID -->
+    <!-- lob#hasOwnerID -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasOwnerID">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request"/>
+    <owl:DatatypeProperty rdf:about="lob#hasOwnerID">
+        <rdfs:domain rdf:resource="lob#Request"/>
         <rdfs:range rdf:resource="&xsd;long"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasOwnerName -->
+    <!-- lob#hasOwnerName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasOwnerName">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request"/>
+    <owl:DatatypeProperty rdf:about="lob#hasOwnerName">
+        <rdfs:domain rdf:resource="lob#Request"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDestinationName -->
+    <!-- lob#hasPointOfDestinationName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDestinationName">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination"/>
+    <owl:DatatypeProperty rdf:about="lob#hasPointOfDestinationName">
+        <rdfs:domain rdf:resource="lob#PointOfDestination"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDispatchName -->
+    <!-- lob#hasPointOfDispatchName -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDispatchName">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDispatch"/>
+    <owl:DatatypeProperty rdf:about="lob#hasPointOfDispatchName">
+        <rdfs:domain rdf:resource="lob#PointOfDispatch"/>
         <rdfs:range rdf:resource="&xsd;string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasRequestID -->
+    <!-- lob#hasRequestID -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasRequestID">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request"/>
+    <owl:DatatypeProperty rdf:about="lob#hasRequestID">
+        <rdfs:domain rdf:resource="lob#Request"/>
         <rdfs:range rdf:resource="&xsd;long"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasStartMomentOfCharge -->
+    <!-- lob#hasStartMomentOfCharge -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasStartMomentOfCharge">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request"/>
+    <owl:DatatypeProperty rdf:about="lob#hasStartMomentOfCharge">
+        <rdfs:domain rdf:resource="lob#Request"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasStartMomentOfDischarge -->
+    <!-- lob#hasStartMomentOfDischarge -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasStartMomentOfDischarge">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request"/>
+    <owl:DatatypeProperty rdf:about="lob#hasStartMomentOfDischarge">
+        <rdfs:domain rdf:resource="lob#Request"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasTTL -->
+    <!-- lob#hasTTL -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasTTL">
+    <owl:DatatypeProperty rdf:about="lob#hasTTL">
         <rdfs:comment>Describes the period of time when the request is available to a specific broker.</rdfs:comment>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request"/>
+        <rdfs:domain rdf:resource="lob#Request"/>
         <rdfs:range rdf:resource="&xsd;dateTime"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#isJuridicPerson -->
+    <!-- lob#isJuridicPerson -->
 
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#isJuridicPerson">
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request"/>
+    <owl:DatatypeProperty rdf:about="lob#isJuridicPerson">
+        <rdfs:domain rdf:resource="lob#Request"/>
         <rdfs:range rdf:resource="&xsd;boolean"/>
     </owl:DatatypeProperty>
     
@@ -264,40 +264,40 @@
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#AddressDestination -->
+    <!-- lob#AddressDestination -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#AddressDestination">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination"/>
+    <owl:Class rdf:about="lob#AddressDestination">
+        <rdfs:subClassOf rdf:resource="lob#PointOfDestination"/>
         <rdfs:comment>A valide OWL Lite ontology about postal address related with final location of the freight.
 http://www.daml.org/ontologies/417</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#AddressDispatch -->
+    <!-- lob#AddressDispatch -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#AddressDispatch">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDispatch"/>
+    <owl:Class rdf:about="lob#AddressDispatch">
+        <rdfs:subClassOf rdf:resource="lob#PointOfDispatch"/>
         <rdfs:comment>A valide OWL Lite ontology about postal address related with initial location of the freight.
 http://www.daml.org/ontologies/417</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDestination -->
+    <!-- lob#GpsCoordinatesDestination -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDestination">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination"/>
+    <owl:Class rdf:about="lob#GpsCoordinatesDestination">
+        <rdfs:subClassOf rdf:resource="lob#PointOfDestination"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDestinationLatitude"/>
+                <owl:onProperty rdf:resource="lob#hasDestinationLatitude"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDestinationLongitude"/>
+                <owl:onProperty rdf:resource="lob#hasDestinationLongitude"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;double"/>
             </owl:Restriction>
@@ -307,20 +307,20 @@ http://www.daml.org/ontologies/417</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDispatch -->
+    <!-- lob#GpsCoordinatesDispatch -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#GpsCoordinatesDispatch">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDispatch"/>
+    <owl:Class rdf:about="lob#GpsCoordinatesDispatch">
+        <rdfs:subClassOf rdf:resource="lob#PointOfDispatch"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDispatchLongitude"/>
+                <owl:onProperty rdf:resource="lob#hasDispatchLongitude"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;double"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDispatchLatitude"/>
+                <owl:onProperty rdf:resource="lob#hasDispatchLatitude"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;double"/>
             </owl:Restriction>
@@ -330,31 +330,31 @@ http://www.daml.org/ontologies/417</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints -->
+    <!-- lob#LocationPoints -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints">
+    <owl:Class rdf:about="lob#LocationPoints">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDestination"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination"/>
+                <owl:onProperty rdf:resource="lob#hasPointOfDestination"/>
+                <owl:allValuesFrom rdf:resource="lob#PointOfDestination"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDispatch"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDispatch"/>
+                <owl:onProperty rdf:resource="lob#hasPointOfDispatch"/>
+                <owl:someValuesFrom rdf:resource="lob#PointOfDispatch"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDestination"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination"/>
+                <owl:onProperty rdf:resource="lob#hasPointOfDestination"/>
+                <owl:someValuesFrom rdf:resource="lob#PointOfDestination"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDispatch"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDispatch"/>
+                <owl:onProperty rdf:resource="lob#hasPointOfDispatch"/>
+                <owl:allValuesFrom rdf:resource="lob#PointOfDispatch"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>Describes location points  that are related with the transport request.</rdfs:comment>
@@ -362,13 +362,13 @@ http://www.daml.org/ontologies/417</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination -->
+    <!-- lob#PointOfDestination -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDestination">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints"/>
+    <owl:Class rdf:about="lob#PointOfDestination">
+        <rdfs:subClassOf rdf:resource="lob#LocationPoints"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDestinationName"/>
+                <owl:onProperty rdf:resource="lob#hasPointOfDestinationName"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;string"/>
             </owl:Restriction>
@@ -379,13 +379,13 @@ http://www.daml.org/ontologies/417</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDispatch -->
+    <!-- lob#PointOfDispatch -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#PointOfDispatch">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints"/>
+    <owl:Class rdf:about="lob#PointOfDispatch">
+        <rdfs:subClassOf rdf:resource="lob#LocationPoints"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasPointOfDispatchName"/>
+                <owl:onProperty rdf:resource="lob#hasPointOfDispatchName"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;string"/>
             </owl:Restriction>
@@ -395,89 +395,89 @@ http://www.daml.org/ontologies/417</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request -->
+    <!-- lob#Request -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#Request">
+    <owl:Class rdf:about="lob#Request">
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasTTL"/>
+                <owl:onProperty rdf:resource="lob#hasTTL"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasDateOfRequest"/>
+                <owl:onProperty rdf:resource="lob#hasDateOfRequest"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasFinishMomentOfDischarge"/>
+                <owl:onProperty rdf:resource="lob#hasFinishMomentOfDischarge"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasFinishMomentOfCharge"/>
+                <owl:onProperty rdf:resource="lob#hasFinishMomentOfCharge"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasStartMomentOfDischarge"/>
+                <owl:onProperty rdf:resource="lob#hasStartMomentOfDischarge"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#isJuridicPerson"/>
+                <owl:onProperty rdf:resource="lob#isJuridicPerson"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;boolean"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasLocationPoints"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints"/>
+                <owl:onProperty rdf:resource="lob#hasLocationPoints"/>
+                <owl:allValuesFrom rdf:resource="lob#LocationPoints"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasOwnerName"/>
+                <owl:onProperty rdf:resource="lob#hasOwnerName"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;string"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasStartMomentOfCharge"/>
+                <owl:onProperty rdf:resource="lob#hasStartMomentOfCharge"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;dateTime"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasRequestID"/>
+                <owl:onProperty rdf:resource="lob#hasRequestID"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;long"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasOwnerID"/>
+                <owl:onProperty rdf:resource="lob#hasOwnerID"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:qualifiedCardinality>
                 <owl:onDataRange rdf:resource="&xsd;long"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#hasLocationPoints"/>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/alexbecheru/ontologies/2015/0/untitled-ontology-56#LocationPoints"/>
+                <owl:onProperty rdf:resource="lob#hasLocationPoints"/>
+                <owl:onClass rdf:resource="lob#LocationPoints"/>
                 <owl:qualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">2</owl:qualifiedCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
