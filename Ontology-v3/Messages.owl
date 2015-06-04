@@ -1,0 +1,326 @@
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+
+
+Ontology: <lob>
+
+
+AnnotationProperty: rdfs:comment
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+Class: <lob#messageFromDbRegistrationResponse>
+
+    Annotations: 
+        rdfs:comment "Message format:
+Db update with success
+OR
+DB failed to update eror xxx"
+    
+    SubClassOf: 
+        <lob#messageFromDb>
+    
+    DisjointWith: 
+        <lob#messageFromDbDataStructure>
+    
+    
+Class: <lob#messageFromDb>
+
+    SubClassOf: 
+        <lob#message>
+    
+    
+Class: <lob#messageForward>
+
+    SubClassOf: 
+        <lob#message>
+    
+    
+Class: <lob#messageFromDbDataStrucutreLMV>
+
+    Annotations: 
+        rdfs:comment "Message format:
+Message that contains a data structure specifing the vehicles that match the request (messageToDbQuerryRequest)"
+    
+    SubClassOf: 
+        <lob#messageFromDbDataStructure>
+    
+    
+Class: <lob#AddVehicleNotificationOfSuccess>
+
+    EquivalentTo: 
+        <lob#messageOfResultAddVehicleSuccess>
+    
+    SubClassOf: 
+        <lob#messageForwardAddVehicle>
+    
+    
+Class: <lob#messageOfResultAddVehicleSuccess>
+
+    Annotations: 
+        rdfs:comment "Message format:
+Request request_id success"
+    
+    EquivalentTo: 
+        <lob#AddVehicleNotificationOfSuccess>
+    
+    SubClassOf: 
+        <lob#messageOfResultAddVehicle>
+    
+    DisjointWith: 
+        <lob#messageOfResultAddVehicleFailure>
+    
+    
+Class: <lob#messageFromDbDataStrucutreLMVP>
+
+    Annotations: 
+        rdfs:comment "Message format:
+Message that contains a data structure specifing the vehicles that match the request (messageToDbQuerryRequest) plus each vehicle negociated price"
+    
+    SubClassOf: 
+        <lob#messageFromDbDataStructure>
+    
+    
+Class: <lob#messageToDb>
+
+    SubClassOf: 
+        <lob#message>
+    
+    
+Class: <lob#messageOfResultRequestVehicle>
+
+    SubClassOf: 
+        <lob#messageOfResult>
+    
+    DisjointWith: 
+        <lob#messageOfResultAddVehicle>
+    
+    
+Class: <lob#AddVehicleNotificationOfFailure>
+
+    EquivalentTo: 
+        <lob#messageOfResultAddVehicleFailure>
+    
+    SubClassOf: 
+        <lob#messageForwardAddVehicle>
+    
+    
+Class: <lob#messageOfResultAddVehicleFailure>
+
+    Annotations: 
+        rdfs:comment "Message format:
+Request request_id failed"
+    
+    EquivalentTo: 
+        <lob#AddVehicleNotificationOfFailure>
+
+
+    SubClassOf: 
+        <lob#messageOfResultAddVehicle>
+    
+    DisjointWith: 
+        <lob#messageOfResultAddVehicleSuccess>
+    
+    
+Class: <lob#messageOfResultAddVehicle>
+
+    SubClassOf: 
+        <lob#messageOfResult>
+    
+    DisjointWith: 
+        <lob#messageOfResultRequestVehicle>
+    
+    
+Class: <lob#RequestVehicleNotificationOfSuccess>
+
+    EquivalentTo: 
+        <lob#messageOfResultRequestVehicleSuccess>
+    
+    SubClassOf: 
+        <lob#messageForwardRequestVehicle>
+    
+    
+Class: <lob#messageOfResultRequestVehicleMismatch>
+
+    Annotations: 
+        rdfs:comment "Message Format:
+Request request_id mismatch"
+    
+    EquivalentTo: 
+        <lob#RequestVehicleNotifcationOfMismatch>
+    
+    SubClassOf: 
+        <lob#messageOfResultRequestVehicle>
+    
+    
+Class: <lob#messageToDbQueryExtraData>
+
+    Annotations: 
+        rdfs:comment "Message format:
+Update sql querry to Data base \"Freight Transport Provider Data\""
+    
+    SubClassOf: 
+        <lob#messageToDbQuery>
+    
+    DisjointWith: 
+        <lob#messageToDbQueryRequest>
+    
+    
+Class: <lob#messageToDbUpdateInfoVehicle>
+
+    SubClassOf: 
+        <lob#messageToDbUpdate>
+    
+    
+Class: <lob#RequestVehicleNotifcationOfMismatch>
+
+    EquivalentTo: 
+        <lob#messageOfResultRequestVehicleMismatch>
+    
+    SubClassOf: 
+        <lob#messageForwardRequestVehicle>
+    
+    
+Class: <lob#message>
+
+    
+Class: <lob#RequestVehicleNotificationOfFailure>
+
+    EquivalentTo: 
+        <lob#messageOfResultRequestVehicleFailed>
+    
+    SubClassOf: 
+        <lob#messageForwardRequestVehicle>
+    
+    
+Class: <lob#messageOfResultRequestVehicleSuccess>
+
+    Annotations: 
+        rdfs:comment "Message format:
+Transporter transporter_id won Request request_id"
+    
+    EquivalentTo: 
+        <lob#RequestVehicleNotificationOfSuccess>
+    
+    SubClassOf: 
+        <lob#messageOfResultRequestVehicle>
+    
+    
+Class: <lob#messageToDbUpdate>
+
+    Annotations: 
+        rdfs:comment "Message format:
+Update sql querry to Data base \"Customer Data\""
+    
+    SubClassOf: 
+        <lob#messageToDb>
+    
+    DisjointWith: 
+        <lob#messageToDbQuery>
+    
+    
+Class: <lob#messageOfResultRequestVehicleFailed>
+
+    Annotations: 
+        rdfs:comment "Message format:
+Request request_id failed"
+    
+    EquivalentTo: 
+        <lob#RequestVehicleNotificationOfFailure>
+    
+    SubClassOf: 
+        <lob#messageOfResultRequestVehicle>
+    
+    
+Class: <lob#messageForwardRequestVehicle>
+
+    SubClassOf: 
+        <lob#messageForward>
+    
+    DisjointWith: 
+        <lob#messageForwardAddVehicle>
+    
+    
+Class: <lob#messageToDbQueryRequest>
+
+    Annotations: 
+        rdfs:comment "Message format:
+Update sql querry to Data base \"Customer Data\""
+    
+    SubClassOf: 
+        <lob#messageToDbQuery>
+    
+    DisjointWith: 
+        <lob#messageToDbQueryExtraData>
+    
+    
+Class: <lob#messageForwardAddVehicle>
+
+    SubClassOf: 
+        <lob#messageForward>
+    
+    DisjointWith: 
+        <lob#messageForwardRequestVehicle>
+    
+    
+Class: <lob#messageFromDbDataStructure>
+
+    SubClassOf: 
+        <lob#messageFromDb>
+    
+    DisjointWith: 
+        <lob#messageFromDbRegistrationResponse>
+    
+    
+Class: <lob#messageToDbQuery>
+
+    SubClassOf: 
+        <lob#messageToDb>
+    
+    DisjointWith: 
+        <lob#messageToDbUpdate>
+    
+    
+Class: <lob#messageOfResult>
+
+    SubClassOf: 
+        <lob#message>
+    
+    
+Class: <lob#messageFromDbDataStructureLMVPED>
+
+    Annotations: 
+        rdfs:comment "Message format:
+Message that contains a data structure specifing the vehicles that match the request (messageToDbQuerryRequest) plus each vehicle negociated price plus extra data about each vehicle's transporter"
+    
+    SubClassOf: 
+        <lob#messageFromDbDataStructure>
+    
+    
+Class: <lob#messageToDbUpdateAddVehicle>
+
+    SubClassOf: 
+        <lob#messageToDbUpdate>
+    
+    
+Class: <lob#messageForwardRequest>
+
+    SubClassOf: 
+        <lob#messageForward>
+    
+    
+DisjointClasses: 
+    <lob#messageOfResultRequestVehicleFailed>, <lob#messageOfResultRequestVehicleMismatch>, <lob#messageOfResultRequestVehicleSuccess>
+
+DisjointClasses: 
+    <lob#messageFromDbDataStructureLMVPED>, <lob#messageFromDbDataStrucutreLMV>, <lob#messageFromDbDataStrucutreLMVP>
+
+DisjointClasses: 
+    <lob#RequestVehicleNotifcationOfMismatch>, <lob#RequestVehicleNotificationOfFailure>, <lob#RequestVehicleNotificationOfSuccess>
+
